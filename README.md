@@ -88,10 +88,10 @@ g++ main.cpp -o PixelEscape -lraylib -lopengl32 -lgdi32 -lwinmm
 - **Hashir Vohra** – Graphic Designer & Handling Documentation & Presentation.
 
 ## ⭐ Future Improvements
-Add sound effects and background music
-Introduce new enemy types and boss fights
-Power-ups and bonus collectibles
-Improved UI using textures and spritesheets
+- Add sound effects and background music.
+- Introduce new enemy types and boss fights.
+- Power-ups and bonus collectibles.
+- Improved UI using textures and spritesheets.
 
 ## 📃 License
 This project is for educational purposes and is licensed under the [MIT License](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository).
