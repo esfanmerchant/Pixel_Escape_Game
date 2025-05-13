@@ -17,7 +17,8 @@ Pixel Escape is a thrilling 2D platformer game built in **C++** using the **Rayl
 
 ## 📸 Screenshots
 
-> *(Add images here if available – gameplay, level selector, monster battle, etc.)*
+![Game Screenshot](Screenshot1.png)
+![Game Screenshot](Screenshot2.png)
 
 ---
 
