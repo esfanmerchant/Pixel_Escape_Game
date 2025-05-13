@@ -1,43 +1,43 @@
 #include <iostream>
-#include <raylib.h>
-
 using namespace std;
 
-int main () {
+// ----------------------------------------------------------------
+// CONFIG and clamp a float between minVal and maxVal
+// ----------------------------------------------------------------
+#include "./includes/Global.h"
 
-    const int SCREEN_WIDTH = 800;
-    const int SCREEN_HEIGHT = 600;
-    int ball_x = 100;
-    int ball_y = 100;
-    int ball_speed_x = 5;
-    int ball_speed_y = 5;
-    int ball_radius = 15;
+// ----------------------------------------------------------------
+// BULLET
+// ----------------------------------------------------------------5
+#include "./includes/Bullet.h"
 
-    cout << "Hello World" << endl;
+// ----------------------------------------------------------------
+// CHARACTERIMAGE (holds textures & gun offset)
+// ----------------------------------------------------------------
+#include "./includes/CharacterImage.h"
 
-    InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "My first RAYLIB program!");
-    SetTargetFPS(60);
+// ----------------------------------------------------------------
+// PLATFORM
+// ----------------------------------------------------------------
+#include "./includes/Platform.h"
 
-    while (WindowShouldClose() == false){
-   
-        ball_x += ball_speed_x;
-        ball_y += ball_speed_y;
+// ----------------------------------------------------------------
+// CHARACTER
+// ----------------------------------------------------------------
+#include "./includes/Character.h"
 
-        if(ball_x + ball_radius >= SCREEN_WIDTH || ball_x - ball_radius <= 0)
-        {
-            ball_speed_x *= -1;
-        }
+// ----------------------------------------------------------------
+// GAME
+// ----------------------------------------------------------------
+#include "./includes/Game.h"
 
-        if(ball_y + ball_radius >= SCREEN_HEIGHT || ball_y - ball_radius <= 0)
-        {
-            ball_speed_y *= -1;
-        }
-        
-        BeginDrawing();
-            ClearBackground(BLACK);
-            DrawCircle(ball_x,ball_y,ball_radius, WHITE);
-        EndDrawing();
-    }
-
-    CloseWindow();
+// ----------------------------------------------------------------
+// ENTRY POINT
+// ----------------------------------------------------------------
+int main()
+{
+    Game game;
+    game.Init();
+    game.Run();
+    return 0;
 }
