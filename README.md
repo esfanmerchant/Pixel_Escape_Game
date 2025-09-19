@@ -84,9 +84,9 @@ g++ main.cpp -o PixelEscape -lraylib -lopengl32 -lgdi32 -lwinmm
 ---
 
 ## 🧑‍💻 Developed By
+- **Hashir Vohra** – Graphic Designer & Handling Documentation & Presentation.
 - **Esfan Merchant** – GUI Developer & game logic contributor.
 - **Ansh Kumar** – Backend Developer & Core logic Designer.
-- **Hashir Vohra** – Graphic Designer & Handling Documentation & Presentation.
 
 ## ⭐ Future Improvements
 - Add sound effects and background music.
